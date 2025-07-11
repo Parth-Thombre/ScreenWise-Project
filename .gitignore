@@ -16,9 +16,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (only ignore production-level secrets)
-.env
-.env.production
+# env files (ignore all env configs including local, dev, prod)
+.env*
+# (covers .env, .env.local, .env.production, .env.development, etc.)
 
 # vercel
 .vercel
